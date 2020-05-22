@@ -1,5 +1,6 @@
 const express = require('express')
 const app = express()
+const PORT = process.env.PORT || 3000;
 
 // static files in 'public' folder will be served over port 3000
 // nginx re-routes port 80 to port 3000
@@ -12,4 +13,4 @@ app.get('/data', (req, res) => {
     })
 })
 
-app.listen(3000, () => console.log('Server running on port 3000'))
+app.listen(PORT, () => console.log('Server running on port 3000'))
