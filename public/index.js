@@ -388,3 +388,4 @@ function isElementInViewport(el) {
   isVisible = elemTop + 40 < window.innerHeight;
   return isVisible;
 }
+
